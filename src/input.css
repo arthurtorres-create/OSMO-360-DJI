@@ -1314,6 +1314,16 @@ body {
       width: 100% !important;
     }
 
+    .grid-row-2-video-com-texto,
+    .grid-row-3-video-com-texto {
+      width: 100%;
+    }
+
+    .grid-row-3-video-com-texto p,
+    .grid-row-2-video-com-texto p {
+      top: 35%;
+    }
+
     section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video {
       max-width: 100%;
     }
