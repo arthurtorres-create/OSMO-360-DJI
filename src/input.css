@@ -1095,7 +1095,7 @@ body {
     }
 
     .tab-1.active {
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 4px solid #e0e0e0;
     }
 
     .product-header-1 h1 {
@@ -1132,7 +1132,7 @@ body {
     }
 
     .tab-2.active {
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 4px solid #e0e0e0;
     }
 
     .product-header-2 h1 {
@@ -1169,7 +1169,7 @@ body {
     }
 
     .tab-3.active {
-        border-bottom: 1px solid #e0e0e0;
+        border-bottom: 4px solid #e0e0e0;
     }
 
     .product-header-3 h1 {
@@ -1343,7 +1343,8 @@ body {
     .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content,
     .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content,
     .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__title,
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__title {
+    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__title,
+    .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__title {
       max-width: 100%;
       width: 100%;
       text-align: center;
@@ -1374,6 +1375,7 @@ body {
 
     .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content {
       max-width: 398px;
+      align-items: center;
     }
 
     .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__title {
