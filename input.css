@@ -1033,6 +1033,7 @@ body {
     width: 100%;
     object-fit: cover;
     height: 100%;
+    border-radius: 16px;
 }
 
 .grid-row-2-video-com-texto p {
@@ -1322,6 +1323,7 @@ body {
     .grid-row-3-video-com-texto p,
     .grid-row-2-video-com-texto p {
       top: 35%;
+      font-size: 1.1rem;
     }
 
     section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video {
@@ -1334,14 +1336,24 @@ body {
       grid-template-areas: "a"
                            "b"
                            "c";
-      gap: 40px;
+      gap: 40px 0px;
       max-width: 398px;
     }
+
+    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content,
+    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content,
+    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__title,
+    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__title {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
 
     .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > .dji-osmo-360-feature__title {
       grid-area: a;
       font-size: 34px !important;
-      max-width: 275px;
+      /* max-width: 275px; */
     }
 
     .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > div:nth-child(2) {
