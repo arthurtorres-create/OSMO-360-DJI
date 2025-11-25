@@ -1,5 +1,7 @@
 /* RESET RETIRAR */
-html, body, body * {
+html,
+body,
+body * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,477 +12,523 @@ body {
 }
 
 /* Reset básico */
-  .dji-lamina * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans", serif;
-  }
-
-  .dji-lamina {
-    color: #fff;
-    margin: 0 auto;
-    max-width: 1920px;
-  }
-
-  .dji-lamina section {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 1920px;
-  }
-
-  /* Títulos, subtitulos, descrições e textos padrões */
-  @font-face {
-    font-family: 'Dji-Light';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./assets/Dji-Light_0.ttf') format('truetype');
-  }
-
-  .dji-osmo-360-container-content-inferior .dji-osmo-360-video {
-    width: 100%;
-    grid-column: 1 / 3;
-  }
-
-  .dji-osmo-360-container-content-inferior .dji-osmo-360-video video {
-    max-width: 100%;
-    height: auto;
-    border-radius: 18px !important;
-  }
-
-
-
-  section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video video {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 18px !important;
-  }
-
-  section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video {
-    max-width: 60%;
-    height: auto;
-    border-radius: 18px !important;
-    display: grid;
-  }
-
-  .dji-lamina h3, .dji-lamina h4, .dji-lamina h5 {
-    margin-bottom: 15px;
-  }
-
-  .dji-lamina .gallery__image,
-  .dji-lamina .showcase__gallery-image,
-  .dji-lamina .camera__image,
-  .dji-lamina .features-list__image,
-  .dji-lamina .telephoto__image,
-  .dji-lamina .panorama__image,
-  .dji-lamina .lidar__image,
-  .dji-lamina .return-home__image,
-  .dji-lamina .assistance__image,
-  .dji-lamina .tracking__feature-image,
-  .dji-lamina .package__image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 18px !important;
-  }
-
-  .dji-lamina .showcase__gallery-image video {
-    max-width: 100%;
-    width: 100%;
-    border-radius: 18px !important;
-  }
-
-  .dji-lamina .showcase__image {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .dji-lamina p {
-    margin-bottom: 20px;
-  }
-
-  .dji-lamina .dji-osmo-360-feature__title {
-    font-size: 40px;
-    margin-bottom: 0px;
-    line-height: 115%;
-    font-weight: 600;
-    color: #fff;
-  }
-
-  .dji-lamina .dji-osmo-360-feature__title > span {
-    font-weight: 300;
-  }
-
-  .dji-lamina .feature__subtitle {
-    font-size: 30px;
-    color: #fff;
-  }
-
-  .dji-lamina .dji-osmo-360-feature__description {
-    max-width: 672px;
-    color: #fff;
-    margin: 0 auto;
-    font-weight: 600;
-    line-height: 130%;
-    font-size: 18px;
-  }
-
-  /* Banners e imagens */
-  .dji-lamina .banner__image {
-    width: 100%;
-    height: auto;
-  }
-
-
-  /* Botões */
-  .dji-lamina .showcase__buttons,
-  .dji-lamina .features-list__button,
-  .dji-lamina .return-home__button {
-    margin: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .dji-lamina .showcase__button,
-  .dji-lamina .features-list__button,
-  .dji-lamina .return-home__button {
-    background: #444;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .dji-lamina .showcase__button:hover,
-  .dji-lamina .features-list__button:hover,
-  .dji-lamina .return-home__button:hover {
-    background: #555;
-  }
-
-  /* Estrutura geral */
-  .dji-lamina .dji-osmo-360-feature__content,
-  .dji-lamina .camera__content,
-  .dji-lamina .features-list__content,
-  .dji-lamina .telephoto__content,
-  .dji-lamina .tracking__details,
-  .dji-lamina .package__content {
-    text-align: start;
-    max-width: 1170px;
-    margin: 0 auto;
-  }
-
-  .dji-lamina .features-list__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .dji-lamina .tracking__details {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-  }
-
-  .dji-lamina .package__gallery {
-    display: grid;
-    grid-template-columns: repeat(6, minmax(100px, 1fr));
-    gap: 10px;
-  }
-
-  /* Configuração do carrossel*/
-  .dji-lamina .showcase {
-    gap: 20px;
-  }
-
-  .dji-lamina .showcase > div.showcase__gallery,
-  .dji-lamina .showcase > div.showcase__gallery > img,
-  .dji-lamina .showcase > div.showcase__gallery > video {
-    border-radius: 18px !important;
-    max-width: 1168px;
-  }
-
-  .dji-lamina .showcase__gallery,
-  .dji-lamina .showcase__gallery * {
-    border-radius: 18px !important;
-  }
-
-  .dji-lamina .showcase__gallery img {
-    margin: 5px;
-    transition: transform 0.2s;
-  }
-
-  .dji-lamina .showcase__gallery img:hover {
-    transform: scale(1.025);
-  }
-
-  .dji-lamina .button-container {
-    display: flex;
-    margin-top: 20px;
-  }
-
-  .dji-lamina .category-button {
-    font-size: 16px;
-    padding: 12px;
-    cursor: pointer;
-    border: none;
-    color: #00000060;
-    border-bottom: 2px solid #00000033;
-    transition: 200ms ease;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Config Showcase */
-  .showcase__paragraph {
-    position: relative;
-    max-width: 600px;
-    color: #ADADAD;
-    text-align: center;
-    margin-top: 20px !important;
-    margin-bottom: 0px;
-    display: none;
+.dji-lamina * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", serif;
 }
 
-  .showcase__paragraph.active {
-    display: block;
-  }
+.dji-lamina {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1920px;
+}
 
-   /* Estilo ao passar o mouse */
-  .dji-lamina .category-button:hover {
-    color: #fff;
-    border-bottom: 2px solid #000;
-  }
+.dji-lamina section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1920px;
+}
 
-    /* Botão ativo */
-  .dji-lamina .category-button.active {
-    color: #fff;
-    border-bottom: 2px solid #000;
-  }
+/* Títulos, subtitulos, descrições e textos padrões */
+@font-face {
+  font-family: "Dji-Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/Dji-Light_0.ttf") format("truetype");
+}
 
-    /* Descrições dobra-13 e dobra-14 */
-  .dji-lamina .showcase .descriptions .dji-osmo-360-feature__description {
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity .3s ease;
-    margin-top: 20px;
-  }
+.dji-osmo-360-container-content-inferior .dji-osmo-360-video {
+  width: 100%;
+  grid-column: 1 / 3;
+}
 
-  .dji-lamina .showcase .descriptions .dji-osmo-360-feature__description.active {
-    opacity: 100% !important;
-    min-height: 35px;
-  }
+.dji-osmo-360-container-content-inferior .dji-osmo-360-video video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px !important;
+}
 
-  .dji-lamina .dobra-22 {
-    background-color: #F8F8F8;
-    color: #222222;
-    padding: 90px 0;
-  }
+section.dji-osmo-360-container-content-lateral-esquerda
+  .dji-osmo-360-video
+  video {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 18px !important;
+}
 
-  .dji-lamina .dobra-22 > .feature__content, .dji-lamina .dobra-22 > .feature__content > ol {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-  }
+section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video {
+  max-width: 60%;
+  height: auto;
+  border-radius: 18px !important;
+  display: grid;
+}
 
-  .dji-lamina .dobra-22 > .feature__content, .dji-lamina .dobra-22 > .feature__content > ol {
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    max-width: 1170px;
-  }
+.dji-lamina h3,
+.dji-lamina h4,
+.dji-lamina h5 {
+  margin-bottom: 15px;
+}
 
-  .dji-lamina .dobra-22 > .feature__content p, .dji-lamina .dobra-22 > .feature__content > ol > li {
-    margin: 0;
-    font-size: 10px;
-    color: #222;
-    font-family: "Open Sans";
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-    letter-spacing: -0.24px;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-  }
+.dji-lamina .gallery__image,
+.dji-lamina .showcase__gallery-image,
+.dji-lamina .camera__image,
+.dji-lamina .features-list__image,
+.dji-lamina .telephoto__image,
+.dji-lamina .panorama__image,
+.dji-lamina .lidar__image,
+.dji-lamina .return-home__image,
+.dji-lamina .assistance__image,
+.dji-lamina .tracking__feature-image,
+.dji-lamina .package__image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 18px !important;
+}
 
-  /* Altura mínima para separar o texto do fundo */
+.dji-lamina .showcase__gallery-image video {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 18px !important;
+}
 
-  /* quebra de linha em versão desktop */
-  .quebra-linha-desktop {
-    display: block;
-  }
+.dji-lamina .showcase__image {
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  @media screen and (max-width: 991px) {
+.dji-lamina p {
+  margin-bottom: 20px;
+}
 
+.dji-lamina .dji-osmo-360-feature__title {
+  font-size: 40px;
+  margin-bottom: 0px;
+  line-height: 115%;
+  font-weight: 600;
+  color: #fff;
+}
+
+.dji-lamina .dji-osmo-360-feature__title > span {
+  font-weight: 300;
+}
+
+.dji-lamina .feature__subtitle {
+  font-size: 30px;
+  color: #fff;
+}
+
+.dji-lamina .dji-osmo-360-feature__description {
+  max-width: 672px;
+  color: #fff;
+  margin: 0 auto;
+  font-weight: 600;
+  line-height: 130%;
+  font-size: 18px;
+}
+
+/* Banners e imagens */
+.dji-lamina .banner__image {
+  width: 100%;
+  height: auto;
+}
+
+/* Botões */
+.dji-lamina .showcase__buttons,
+.dji-lamina .features-list__button,
+.dji-lamina .return-home__button {
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dji-lamina .showcase__button,
+.dji-lamina .features-list__button,
+.dji-lamina .return-home__button {
+  background: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.dji-lamina .showcase__button:hover,
+.dji-lamina .features-list__button:hover,
+.dji-lamina .return-home__button:hover {
+  background: #555;
+}
+
+/* Estrutura geral */
+.dji-lamina .dji-osmo-360-feature__content,
+.dji-lamina .camera__content,
+.dji-lamina .features-list__content,
+.dji-lamina .telephoto__content,
+.dji-lamina .tracking__details,
+.dji-lamina .package__content {
+  text-align: start;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.dji-lamina .features-list__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.dji-lamina .tracking__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.dji-lamina .package__gallery {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  gap: 10px;
+}
+
+/* Configuração do carrossel*/
+.dji-lamina .showcase {
+  gap: 20px;
+}
+
+.dji-lamina .showcase > div.showcase__gallery,
+.dji-lamina .showcase > div.showcase__gallery > img,
+.dji-lamina .showcase > div.showcase__gallery > video {
+  border-radius: 18px !important;
+  max-width: 1168px;
+}
+
+.dji-lamina .showcase__gallery,
+.dji-lamina .showcase__gallery * {
+  border-radius: 18px !important;
+}
+
+.dji-lamina .showcase__gallery img {
+  margin: 5px;
+  transition: transform 0.2s;
+}
+
+.dji-lamina .showcase__gallery img:hover {
+  transform: scale(1.025);
+}
+
+.dji-lamina .button-container {
+  display: flex;
+  margin-top: 20px;
+}
+
+.dji-lamina .category-button {
+  font-size: 16px;
+  padding: 12px;
+  cursor: pointer;
+  border: none;
+  color: #00000060;
+  border-bottom: 2px solid #00000033;
+  transition: 200ms ease;
+  display: flex;
+  justify-content: center;
+}
+
+/* Config Showcase */
+.showcase__paragraph {
+  position: relative;
+  max-width: 600px;
+  color: #adadad;
+  text-align: center;
+  margin-top: 20px !important;
+  margin-bottom: 0px;
+  display: none;
+}
+
+.showcase__paragraph.active {
+  display: block;
+}
+
+/* Estilo ao passar o mouse */
+.dji-lamina .category-button:hover {
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+
+/* Botão ativo */
+.dji-lamina .category-button.active {
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+
+/* Descrições dobra-13 e dobra-14 */
+.dji-lamina .showcase .descriptions .dji-osmo-360-feature__description {
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  margin-top: 20px;
+}
+
+.dji-lamina .showcase .descriptions .dji-osmo-360-feature__description.active {
+  opacity: 100% !important;
+  min-height: 35px;
+}
+
+.dji-lamina .dobra-22 {
+  background-color: #f8f8f8;
+  color: #222222;
+  padding: 90px 0;
+}
+
+.dji-lamina .dobra-22 > .feature__content,
+.dji-lamina .dobra-22 > .feature__content > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.dji-lamina .dobra-22 > .feature__content,
+.dji-lamina .dobra-22 > .feature__content > ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  max-width: 1170px;
+}
+
+.dji-lamina .dobra-22 > .feature__content p,
+.dji-lamina .dobra-22 > .feature__content > ol > li {
+  margin: 0;
+  font-size: 10px;
+  color: #222;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: -0.24px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Altura mínima para separar o texto do fundo */
+
+/* quebra de linha em versão desktop */
+.quebra-linha-desktop {
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
   .quebra-linha-desktop {
     display: none;
-    }
   }
+}
 
-  .dji-lamina .dobra-22 > .feature__content, .dji-lamina .dobra-22 > .feature__content > ol {
-    padding-inline: 16px;
-  }
+.dji-lamina .dobra-22 > .feature__content,
+.dji-lamina .dobra-22 > .feature__content > ol {
+  padding-inline: 16px;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-inferior {
-    padding: 90px 0;
-  }
+.dji-lamina .dji-osmo-360-container-content-inferior {
+  padding: 90px 0;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content {
-    display: grid;
-    grid-template-columns: .85fr 1.15fr;
-    gap: 100px;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-inferior
+  > .dji-osmo-360-feature__content {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 100px;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > .dji-osmo-360-feature__title {
-    font-size: 48px;
-    /* max-width: 400px; - verificar */
-    background: linear-gradient(270deg, #87C1FF 21.94%, #2A57AF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-inferior
+  > .dji-osmo-360-feature__content
+  > .dji-osmo-360-feature__title {
+  font-size: 48px;
+  /* max-width: 400px; - verificar */
+  background: linear-gradient(270deg, #87c1ff 21.94%, #2a57af 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > .showcase__gallery-image {
-    width: 100%;
-    grid-column: 1 / 3;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-inferior
+  > .dji-osmo-360-feature__content
+  > .showcase__gallery-image {
+  width: 100%;
+  grid-column: 1 / 3;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda {
-    padding: 90px 0;
-  }
+.dji-lamina .dji-osmo-360-container-content-lateral-esquerda {
+  padding: 90px 0;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    gap: 60px;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-lateral-esquerda
+  > .dji-osmo-360-feature__content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
 
-  @media (min-width: 992px) {
-    .reverse > .dji-osmo-360-feature__content {
+@media (min-width: 992px) {
+  .reverse > .dji-osmo-360-feature__content {
     flex-direction: row !important;
   }
-  }
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 50px;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-lateral-esquerda
+  > .dji-osmo-360-feature__content
+  > .dji-osmo-360-text__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__title {
-    font-size: 48px;
-    font-weight: 600;
-    line-height: 110%;
-    letter-spacing: -2.56px;
-    background: linear-gradient(270deg, #87C1FF 21.94%, #2A57AF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-lateral-esquerda
+  > .dji-osmo-360-feature__content
+  > .dji-osmo-360-text__content
+  > .dji-osmo-360-feature__title {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -2.56px;
+  background: linear-gradient(270deg, #87c1ff 21.94%, #2a57af 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__description {
-    max-width: 460px;
-    margin: 0;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-lateral-esquerda
+  > .dji-osmo-360-feature__content
+  > .dji-osmo-360-text__content
+  > .dji-osmo-360-feature__description {
+  max-width: 460px;
+  margin: 0;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .gallery__showcase-image {
-    max-width: 680px;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-lateral-esquerda
+  > .dji-osmo-360-feature__content
+  > .gallery__showcase-image {
+  max-width: 680px;
+}
 
-  .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .gallery__showcase-image video {
-    width: 100%;
-  }
+.dji-lamina
+  .dji-osmo-360-container-content-lateral-esquerda
+  > .dji-osmo-360-feature__content
+  > .gallery__showcase-image
+  video {
+  width: 100%;
+}
 
-  .dji-lamina .dobra-flex-row-responsive > .box__content {
-    padding: 45px 0;
-    display: grid;
-    grid-template-columns: 1.4fr .2fr 1.4fr;
-    align-items: center;
-    gap: 60px;
-    max-width: 1200px;
-  }
+.dji-lamina .dobra-flex-row-responsive > .box__content {
+  padding: 45px 0;
+  display: grid;
+  grid-template-columns: 1.4fr 0.2fr 1.4fr;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+}
 
-  .dji-lamina .dobra-flex-row-responsive > .box__content > .showcase__gallery-image {
-    grid-area: a;
-  }
+.dji-lamina
+  .dobra-flex-row-responsive
+  > .box__content
+  > .showcase__gallery-image {
+  grid-area: a;
+}
 
-  .dji-lamina .dobra-flex-row-responsive > .box__content > .dji-osmo-360-text__content {
-    grid-area: b;
-    align-self: center;
-    text-align: left;
-    max-width: 455px;
-  }
+.dji-lamina
+  .dobra-flex-row-responsive
+  > .box__content
+  > .dji-osmo-360-text__content {
+  grid-area: b;
+  align-self: center;
+  text-align: left;
+  max-width: 455px;
+}
 
-  .dji-lamina .dobra-flex-row-responsive > .box__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__title {
-    font-size: 40px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    max-width: 450px;
-    background: linear-gradient(270deg, #87C1FF 21.94%, #2A57AF 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.dji-lamina
+  .dobra-flex-row-responsive
+  > .box__content
+  > .dji-osmo-360-text__content
+  > .dji-osmo-360-feature__title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  max-width: 450px;
+  background: linear-gradient(270deg, #87c1ff 21.94%, #2a57af 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
-  .dji-lamina .dobra-flex-row-responsive > .box__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__description {
-    font-weight: 600;
-    line-height: 135%; /* 27px */
-    letter-spacing: -0.4px;
-  }
+.dji-lamina
+  .dobra-flex-row-responsive
+  > .box__content
+  > .dji-osmo-360-text__content
+  > .dji-osmo-360-feature__description {
+  font-weight: 600;
+  line-height: 135%; /* 27px */
+  letter-spacing: -0.4px;
+}
 
-  .dji-lamina .tracking__feature--description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+.dji-lamina .tracking__feature--description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-  /* ------- DESKTOP (padrão) ------- */
+/* ------- DESKTOP (padrão) ------- */
 
-  .dji-lamina section.dji-osmo-360-hero-section,
-  .dji-lamina section.dji-osmo-360-hero-section-2 {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding: 0 !important;
-  }
+.dji-lamina section.dji-osmo-360-hero-section,
+.dji-lamina section.dji-osmo-360-hero-section-2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 !important;
+}
 
-  .dji-osmo-360-hero-dji-osmo-360-video {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.dji-osmo-360-hero-dji-osmo-360-video {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  .dji-osmo-360-hero-dji-osmo-360-video video {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+.dji-osmo-360-hero-dji-osmo-360-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  /* Ambos os conteúdos seguem a mesma estrutura: ficarão centralizados
+/* Ambos os conteúdos seguem a mesma estrutura: ficarão centralizados
      e posicionados relativamente ao respectivo section pai */
-  .dji-osmo-360-hero-content,
-  .dji-osmo-360-hero-content-2 {
-    top: 80px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
-    text-align: center;
-    color: #fff;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 20px;
-  }
+.dji-osmo-360-hero-content,
+.dji-osmo-360-hero-content-2 {
+  top: 80px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+}
 
 .dji-osmo-360-hero-subtitle {
   font-size: 1.2rem;
@@ -495,42 +543,42 @@ body {
 }
 
 .dji-osmo-360-about {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 .dji-osmo-360-about-content {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .dji-osmo-360-about-title {
-    font-size: 72px;
-    font-weight: bold;
-    margin-bottom: 24px;
-    line-height: 1.1;
+  font-size: 72px;
+  font-weight: bold;
+  margin-bottom: 24px;
+  line-height: 1.1;
 }
 
 .dji-osmo-360-about-description {
-    font-size: 18px;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #fff;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
 }
 
 .dji-osmo-360-about-banner {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
 .dji-osmo-360-about-banner img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .dji-lamina section.dji-osmo-360-banner-default {
@@ -545,23 +593,23 @@ body {
 
 /* carrousel  */
 .product-section-1 {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .product-header-1 {
-    padding: 40px 30px 20px;
-    text-align: center;
-    background: transparent;
-    color: white;
+  padding: 40px 30px 20px;
+  text-align: center;
+  background: transparent;
+  color: white;
 }
 
 .product-header-1 h1 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 64px;
@@ -572,9 +620,9 @@ body {
 }
 
 .banner-container-1 {
-    width: 100%;
-    overflow: hidden;
-    height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
 }
 
 .banner-container-1 video {
@@ -587,132 +635,132 @@ body {
 }
 
 .product-banner-1 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease;
 }
 
 .tabs-container-1 {
-    display: flex;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: transparent;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
 }
 
 .tab-1 {
-    padding: 18px 25px;
-    cursor: pointer;
-    font-weight: 600;
-    color: #555;
-    transition: all 0.3s ease;
-    border-bottom: 3px solid transparent;
-    flex: 1;
-    text-align: center;
-    font-size: 1rem;
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: var(--font-family-Font-1, "Open Sans");
-    font-size: var(--font-size-16, 16px);
-    font-style: normal;
-    font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-20, 20px); /* 125% */
-    letter-spacing: var(--letter-spacing--0_32, -0.32px);
+  padding: 18px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: var(--font-family-Font-1, "Open Sans");
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-20, 20px); /* 125% */
+  letter-spacing: var(--letter-spacing--0_32, -0.32px);
 }
 
 .tab-1.active {
-    border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .tab-content-1 {
-    display: none;
-    padding: 40px 30px;
-    animation: fadeIn-1 0.5s ease;
+  display: none;
+  padding: 40px 30px;
+  animation: fadeIn-1 0.5s ease;
 }
 
 .tab-content-1.active {
-    display: block;
+  display: block;
 }
 
 .content-section-1 {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .content-section-1 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #1a1a2e;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  text-align: center;
 }
 
 .content-section-1 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .content-section-1 p:last-child {
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #1a73e8;
-    font-size: 1rem;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #1a73e8;
+  font-size: 1rem;
 }
 
 .description-container-1 {
-    padding: 30px;
-    margin-top: 20px;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 .description-container-1 p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #fff;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .tab-full-content {
-    display: none;
+  display: none;
 }
 
 .tab-full-content.active {
-    display: block;
+  display: block;
 }
 
 @keyframes fadeIn-1 {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Product Section 2 - Replica de product-section-1 */
 .product-section-2 {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .product-header-2 {
-    padding: 40px 30px 20px;
-    text-align: center;
-    background: transparent;
-    color: white;
+  padding: 40px 30px 20px;
+  text-align: center;
+  background: transparent;
+  color: white;
 }
 
 .product-header-2 h1 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 64px;
@@ -723,9 +771,9 @@ body {
 }
 
 .banner-container-2 {
-    width: 100%;
-    overflow: hidden;
-    height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
 }
 
 .banner-container-2 video {
@@ -738,113 +786,113 @@ body {
 }
 
 .product-banner-2 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease;
 }
 
 .tabs-container-2 {
-    display: flex;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: transparent;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
 }
 
 .tab-2 {
-    padding: 18px 25px;
-    cursor: pointer;
-    font-weight: 600;
-    color: #555;
-    transition: all 0.3s ease;
-    border-bottom: 3px solid transparent;
-    flex: 1;
-    text-align: center;
-    font-size: 1rem;
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: var(--font-family-Font-1, "Open Sans");
-    font-size: var(--font-size-16, 16px);
-    font-style: normal;
-    font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-20, 20px);
-    letter-spacing: var(--letter-spacing--0_32, -0.32px);
+  padding: 18px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: var(--font-family-Font-1, "Open Sans");
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-20, 20px);
+  letter-spacing: var(--letter-spacing--0_32, -0.32px);
 }
 
 .tab-2.active {
-    border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .tab-content-2 {
-    display: none;
-    padding: 40px 30px;
-    animation: fadeIn-1 0.5s ease;
+  display: none;
+  padding: 40px 30px;
+  animation: fadeIn-1 0.5s ease;
 }
 
 .tab-content-2.active {
-    display: block;
+  display: block;
 }
 
 .content-section-2 {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .content-section-2 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #1a1a2e;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  text-align: center;
 }
 
 .content-section-2 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .content-section-2 p:last-child {
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #1a73e8;
-    font-size: 1rem;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #1a73e8;
+  font-size: 1rem;
 }
 
 .description-container-2 {
-    padding: 30px;
-    margin-top: 20px;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 .description-container-2 p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #fff;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 /* Product Section 3 - Replica de product-section-1 */
 .product-section-3 {
-    max-width: 1200px;
-    margin: 0 auto;
-    background: transparent;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: transparent;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .product-header-3 {
-    padding: 40px 30px 20px;
-    text-align: center;
-    background: transparent;
-    color: white;
+  padding: 40px 30px 20px;
+  text-align: center;
+  background: transparent;
+  color: white;
 }
 
 .product-header-3 h1 {
-  color: #FFF;
+  color: #fff;
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-size: 64px;
@@ -855,9 +903,9 @@ body {
 }
 
 .banner-container-3 {
-    width: 100%;
-    overflow: hidden;
-    height: fit-content;
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
 }
 
 .banner-container-3 video {
@@ -870,92 +918,92 @@ body {
 }
 
 .product-banner-3 {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: opacity 0.5s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.5s ease;
 }
 
 .tabs-container-3 {
-    display: flex;
-    border-bottom: 1px solid #e0e0e0;
-    background-color: transparent;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: transparent;
 }
 
 .tab-3 {
-    padding: 18px 25px;
-    cursor: pointer;
-    font-weight: 600;
-    color: #555;
-    transition: all 0.3s ease;
-    border-bottom: 3px solid transparent;
-    flex: 1;
-    text-align: center;
-    font-size: 1rem;
-    color: var(--white, #FFF);
-    text-align: center;
-    font-family: var(--font-family-Font-1, "Open Sans");
-    font-size: var(--font-size-16, 16px);
-    font-style: normal;
-    font-weight: var(--font-weight-400, 400);
-    line-height: var(--line-height-20, 20px);
-    letter-spacing: var(--letter-spacing--0_32, -0.32px);
+  padding: 18px 25px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  flex: 1;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--white, #fff);
+  text-align: center;
+  font-family: var(--font-family-Font-1, "Open Sans");
+  font-size: var(--font-size-16, 16px);
+  font-style: normal;
+  font-weight: var(--font-weight-400, 400);
+  line-height: var(--line-height-20, 20px);
+  letter-spacing: var(--letter-spacing--0_32, -0.32px);
 }
 
 .tab-3.active {
-    border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .tab-content-3 {
-    display: none;
-    padding: 40px 30px;
-    animation: fadeIn-1 0.5s ease;
+  display: none;
+  padding: 40px 30px;
+  animation: fadeIn-1 0.5s ease;
 }
 
 .tab-content-3.active {
-    display: block;
+  display: block;
 }
 
 .content-section-3 {
-    max-width: 800px;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .content-section-3 h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #1a1a2e;
-    text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a2e;
+  text-align: center;
 }
 
 .content-section-3 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .content-section-3 p:last-child {
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 4px solid #1a73e8;
-    font-size: 1rem;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #1a73e8;
+  font-size: 1rem;
 }
 
 .description-container-3 {
-    padding: 30px;
-    margin-top: 20px;
+  padding: 30px;
+  margin-top: 20px;
 }
 
 .description-container-3 p {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    color: #fff;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #fff;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .dji-osmo-360-grid {
@@ -1030,10 +1078,10 @@ body {
 }
 
 .grid-row-2-video-com-texto video {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    border-radius: 16px;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 16px;
 }
 
 .grid-row-2-video-com-texto p {
@@ -1057,9 +1105,9 @@ body {
 }
 
 .grid-row-3-video-com-texto video {
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .grid-row-3-video-com-texto p {
@@ -1077,146 +1125,162 @@ body {
   width: 100%;
 }
 
-
-
-
+.solo-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  letter-spacing: -1.92px;
+}
 
 @media (max-width: 768px) {
-    .tabs-container-1 {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 10px 10px;
-    }
+  .solo-text {
+    color: #fff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 37.4px */
+    letter-spacing: -1.02px;
+  }
+  .tabs-container-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
 
-    .tab-1 {
-        border-bottom: 1px solid #e0e0e0;
-        border-left: 3px solid transparent;
-        padding: 15px 20px;
-    }
+  .tab-1 {
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 3px solid transparent;
+    padding: 15px 20px;
+  }
 
-    .tab-1.active {
-        border-bottom: 4px solid #e0e0e0;
-    }
+  .tab-1.active {
+    border-bottom: 4px solid #e0e0e0;
+  }
 
-    .product-header-1 h1 {
-        font-size: 2rem;
-    }
+  .product-header-1 h1 {
+    font-size: 2rem;
+  }
 
-    .product-header-1 p {
-        font-size: 1.1rem;
-    }
+  .product-header-1 p {
+    font-size: 1.1rem;
+  }
 
-    .banner-container-1 {
-        height: auto;
-    }
+  .banner-container-1 {
+    height: auto;
+  }
 
-    .content-section-1 h2 {
-        font-size: 1.5rem;
-    }
+  .content-section-1 h2 {
+    font-size: 1.5rem;
+  }
 
-    .content-section-1 p {
-        font-size: 1rem;
-    }
+  .content-section-1 p {
+    font-size: 1rem;
+  }
 
-    /* Product Section 2 Media Queries */
-    .tabs-container-2 {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 10px 10px;
-    }
+  /* Product Section 2 Media Queries */
+  .tabs-container-2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
 
-    .tab-2 {
-        border-bottom: 1px solid #e0e0e0;
-        border-left: 3px solid transparent;
-        padding: 15px 20px;
-    }
+  .tab-2 {
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 3px solid transparent;
+    padding: 15px 20px;
+  }
 
-    .tab-2.active {
-        border-bottom: 4px solid #e0e0e0;
-    }
+  .tab-2.active {
+    border-bottom: 4px solid #e0e0e0;
+  }
 
-    .product-header-2 h1 {
-        font-size: 2rem;
-    }
+  .product-header-2 h1 {
+    font-size: 2rem;
+  }
 
-    .product-header-2 p {
-        font-size: 1.1rem;
-    }
+  .product-header-2 p {
+    font-size: 1.1rem;
+  }
 
-    .banner-container-2 {
-        height: auto;
-    }
+  .banner-container-2 {
+    height: auto;
+  }
 
-    .content-section-2 h2 {
-        font-size: 1.5rem;
-    }
+  .content-section-2 h2 {
+    font-size: 1.5rem;
+  }
 
-    .content-section-2 p {
-        font-size: 1rem;
-    }
+  .content-section-2 p {
+    font-size: 1rem;
+  }
 
-    /* Product Section 3 Media Queries */
-    .tabs-container-3 {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 10px 10px;
-    }
+  /* Product Section 3 Media Queries */
+  .tabs-container-3 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+  }
 
-    .tab-3 {
-        border-bottom: 1px solid #e0e0e0;
-        border-left: 3px solid transparent;
-        padding: 15px 20px;
-    }
+  .tab-3 {
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 3px solid transparent;
+    padding: 15px 20px;
+  }
 
-    .tab-3.active {
-        border-bottom: 4px solid #e0e0e0;
-    }
+  .tab-3.active {
+    border-bottom: 4px solid #e0e0e0;
+  }
 
-    .product-header-3 h1 {
-        font-size: 2rem;
-    }
+  .product-header-3 h1 {
+    font-size: 2rem;
+  }
 
-    .product-header-3 p {
-        font-size: 1.1rem;
-    }
+  .product-header-3 p {
+    font-size: 1.1rem;
+  }
 
-    .banner-container-3 {
-        height: auto;
-    }
+  .banner-container-3 {
+    height: auto;
+  }
 
-    .content-section-3 h2 {
-        font-size: 1.5rem;
-    }
+  .content-section-3 h2 {
+    font-size: 1.5rem;
+  }
 
-    .content-section-3 p {
-        font-size: 1rem;
-    }
+  .content-section-3 p {
+    font-size: 1rem;
+  }
 }
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .dji-osmo-360-about {
-        padding: 20px 16px;
-    }
+  .dji-osmo-360-about {
+    padding: 20px 16px;
+  }
 
-    .dji-osmo-360-about-title {
-        font-size: 34px;
-        margin-bottom: 16px;
-    }
+  .dji-osmo-360-about-title {
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
 
-    .dji-osmo-360-about-description {
-        font-size: 14px;
-        line-height: 1.5;
-    }
+  .dji-osmo-360-about-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
 
-    .dji-osmo-360-about-content {
-        margin-bottom: 30px;
-    }
+  .dji-osmo-360-about-content {
+    margin-bottom: 30px;
+  }
 }
 
 /* ------- MOBILE ------- */
 @media (max-width: 768px) {
-
   .dji-osmo-360-hero-section {
     height: 100vh;
   }
@@ -1242,7 +1306,6 @@ body {
 
 /* ------- MOBILE PEQUENO ------- */
 @media (max-width: 768px) {
-
   .dji-lamina section.dji-osmo-360-hero-section {
     width: 100%;
     padding: 0 !important;
@@ -1282,125 +1345,165 @@ body {
   }
 }
 
+/* Ajustes para Mobile */
 
-  /* Ajustes para Mobile */
-
-
-  @media screen and (max-width: 1200px) {
-    .dji-lamina section {
-      padding: 40px 21.8px !important;
-    }
+@media screen and (max-width: 1200px) {
+  .dji-lamina section {
+    padding: 40px 21.8px !important;
   }
+}
 
-  @media screen and (max-width: 991px) {
-    /* .dji-lamina .dji-osmo-360-container-content-inferior {
+@media screen and (max-width: 991px) {
+  /* .dji-lamina .dji-osmo-360-container-content-inferior {
       margin-top: 40px;
     } */
 
-    .dji-osmo-360-grid .grid-row-1,
-    .dji-osmo-360-grid .grid-row-2,
-    .dji-osmo-360-grid .grid-row-3,
-    .dji-osmo-360-grid .grid-row-4 {
-      flex-direction: column;
-    }
+  .dji-osmo-360-grid .grid-row-1,
+  .dji-osmo-360-grid .grid-row-2,
+  .dji-osmo-360-grid .grid-row-3,
+  .dji-osmo-360-grid .grid-row-4 {
+    flex-direction: column;
+  }
 
-    .dji-osmo-360-grid .grid-row-1 > img,
-    .dji-osmo-360-grid .grid-row-1 > video,
-    .dji-osmo-360-grid .grid-row-2 > img,
-    .dji-osmo-360-grid .grid-row-2 > video,
-    .dji-osmo-360-grid .grid-row-3 > img,
-    .dji-osmo-360-grid .grid-row-3 > video,
-    .dji-osmo-360-grid .grid-row-4 > img,
-    .dji-osmo-360-grid .grid-row-4 > video {
-      width: 100% !important;
-    }
+  .dji-osmo-360-grid .grid-row-1 > img,
+  .dji-osmo-360-grid .grid-row-1 > video,
+  .dji-osmo-360-grid .grid-row-2 > img,
+  .dji-osmo-360-grid .grid-row-2 > video,
+  .dji-osmo-360-grid .grid-row-3 > img,
+  .dji-osmo-360-grid .grid-row-3 > video,
+  .dji-osmo-360-grid .grid-row-4 > img,
+  .dji-osmo-360-grid .grid-row-4 > video {
+    width: 100% !important;
+  }
 
-    .grid-row-2-video-com-texto,
-    .grid-row-3-video-com-texto {
-      width: 100%;
-    }
+  .grid-row-2-video-com-texto,
+  .grid-row-3-video-com-texto {
+    width: 100%;
+  }
 
-    .grid-row-3-video-com-texto p,
-    .grid-row-2-video-com-texto p {
-      top: 35%;
-      font-size: 1.1rem;
-    }
+  .grid-row-3-video-com-texto p,
+  .grid-row-2-video-com-texto p {
+    top: 35%;
+    font-size: 1.1rem;
+  }
 
-    section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video {
-      max-width: 100%;
-    }
+  section.dji-osmo-360-container-content-lateral-esquerda .dji-osmo-360-video {
+    max-width: 100%;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content {
-      grid-template-columns: 1fr;
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__content {
+    grid-template-columns: 1fr;
     grid-template-areas: "a" "b" "c";
-      grid-template-areas: "a"
-                           "b"
-                           "c";
-      gap: 40px 0px;
-      max-width: 398px;
-    }
+    grid-template-areas:
+      "a"
+      "b"
+      "c";
+    gap: 40px 0px;
+    max-width: 398px;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content,
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content,
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__title,
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__title,
-    .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__title {
-      max-width: 100%;
-      width: 100%;
-      text-align: center;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__content,
+  .dji-lamina
+    .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__content,
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__title,
+  .dji-lamina
+    .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__title,
+  .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__title {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
 
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__content
+    > .dji-osmo-360-feature__title {
+    grid-area: a;
+    font-size: 34px !important;
+    /* max-width: 275px; */
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > .dji-osmo-360-feature__title {
-      grid-area: a;
-      font-size: 34px !important;
-      /* max-width: 275px; */
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__content
+    > div:nth-child(2) {
+    grid-area: b;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > div:nth-child(2) {
-      grid-area: b;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__content
+    > div:nth-child(2)
+    > .dji-osmo-360-feature__description {
+    margin: 0;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > div:nth-child(2) > .dji-osmo-360-feature__description {
-      margin: 0;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-inferior
+    > .dji-osmo-360-feature__content
+    > .showcase__gallery-image {
+    grid-area: c;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-inferior > .dji-osmo-360-feature__content > .showcase__gallery-image {
-      grid-area: c;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__content {
+    flex-direction: column;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content {
-      flex-direction: column;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__content
+    > .dji-osmo-360-text__content {
+    max-width: 398px;
+    align-items: center;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content {
-      max-width: 398px;
-      align-items: center;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__content
+    > .dji-osmo-360-text__content
+    > .dji-osmo-360-feature__title {
+    max-width: 350px;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__title {
-      max-width: 350px;
-    }
+  .dji-lamina
+    .dji-osmo-360-container-content-lateral-esquerda
+    > .dji-osmo-360-feature__content
+    > .dji-osmo-360-text__content
+    > .dji-osmo-360-feature__description {
+    font-size: 14px;
+  }
 
-    .dji-lamina .dji-osmo-360-container-content-lateral-esquerda > .dji-osmo-360-feature__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__description {
-      font-size: 14px;
-    }
+  .dji-lamina .dobra-flex-row-responsive > .box__content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "b"
+      "a";
+    gap: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 398px;
+  }
 
-    .dji-lamina .dobra-flex-row-responsive > .box__content {
-      grid-template-columns: 1fr;
-      grid-template-areas: "b"
-                           "a";
-      gap: 30px;
-      padding-top: 0;
-      padding-bottom: 0;
-      max-width: 398px;
-    }
-
-    .dji-lamina .dobra-flex-row-responsive > .box__content > .dji-osmo-360-text__content > .dji-osmo-360-feature__title {
-      font-size: 24px !important;
-      font-weight: 600;
-      max-width: 270px;
-    }
+  .dji-lamina
+    .dobra-flex-row-responsive
+    > .box__content
+    > .dji-osmo-360-text__content
+    > .dji-osmo-360-feature__title {
+    font-size: 24px !important;
+    font-weight: 600;
+    max-width: 270px;
+  }
 
   @media screen and (max-width: 767px) {
     h3.dji-osmo-360-feature__title {
@@ -1427,14 +1530,14 @@ body {
 
 .desktop {
   display: block !important;
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     display: none !important;
   }
 }
 
 .mobile {
   display: none !important;
-  @media(max-width: 1023px) {
+  @media (max-width: 1023px) {
     display: block !important;
   }
 }
